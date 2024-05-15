@@ -16,7 +16,7 @@ const MobileNav = () => {
     <nav className="md:hidden">
       <Sheet>
         <SheetTrigger className="align-middle">
-          <Image 
+          <Image
             src="/assets/icons/menu.svg"
             alt="menu"
             width={24}
@@ -25,12 +25,13 @@ const MobileNav = () => {
           />
         </SheetTrigger>
         <SheetContent className="flex flex-col gap-6 bg-white md:hidden">
-          <Image 
-            src="/assets/images/logo.svg"
-            alt="logo"
-            width={128}
-            height={38}
-          />
+          <div className="flex">
+            <Image
+              src="/assets/images/logo.svg" width={50} height={0}
+              alt="EventNook Logo"
+            />
+            <span className="my-auto ml-1 text-3xl font-semibold">EventNook</span>
+          </div>
           <Separator className="border border-gray-50" />
           <NavItems />
         </SheetContent>
